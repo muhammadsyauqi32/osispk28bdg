@@ -129,6 +129,9 @@ nav .fas {
   .nav-link ul {
     padding: 30px;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 
 .berita {
