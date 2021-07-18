@@ -130,7 +130,7 @@ nav .fas {
     padding: 30px;
   }
   body {
-    overflow-x: hidden;
+    width: 100vw;
   }
 }
 
