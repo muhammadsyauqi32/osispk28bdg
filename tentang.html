@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang | OSIS/PK 28 Bandung</title>
+    <link rel="stylesheet" href="CSS/styletentang.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/aafc92313b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="osispk.html">
+          <img src="Images/28_21.png" alt="" />
+        </a>
+        <div class="nav-link" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="osispk.html">Home</a></li>
+            <li><a href="">Tentang</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="kepengurusan.html">Kepengurusan</a></li>
+            <li><a href="saran.html">Saran</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="textbox">
+        <h1>TENTANG KITA</h1>
+
+        <a href="#berita" class="btn"><i class="fas fa-arrow-down"></i></a>
+      </div>
+    </section>
+
+    <section class="tentang" id="berita">
+      <div class="row">
+        <div class="tentang-col">
+          <h1 style="text-align: center">OSIS SMPN 28 bandung</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore at provident minus natus itaque quae eligendi voluptatem animi similique dolor explicabo corrupti reprehenderit cupiditate, dolores quisquam?</p>
+        </div>
+        <div class="tentang-col">
+          <img src="images/tentangosis3.png" alt="" />
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="icon-row">
+        <div class="icon-col">
+          <i class="fas fa-user"></i>
+          <h2>58</h2>
+          <p>Anggota OSIS/PK 2021/2022</p>
+        </div>
+        <div class="icon-col">
+          <i class="fas fa-hiking"></i>
+          <h2>30</h2>
+          <p>Ekstrakulikuler</p>
+        </div>
+        <div class="icon-col">
+          <i class="fas fa-user-graduate"></i>
+          <h2>1100</h2>
+          <p>Siswa</p>
+        </div>
+        <div class="icon-col">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h2>40</h2>
+          <p>Guru Pengajar</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>Tentang Kita</h4>
+      <p>Organisasi Siswa Intra Sekolah SMPN 28 Bandung.</p>
+      <div class="icon">
+        <a href="https://www.instagram.com/osispk28bdg/" target="_blank">
+          <img src="images/ig2.png" alt="" width="50rem" class="ig" />
+        </a>
+        <a href="">
+          <img src="images/yt.png" alt="" width="50rem" class="yt" />
+        </a>
+        <a href="">
+          <img src="images/fb2.png" alt="" width="50rem" class="fb" />
+        </a>
+        <a href="">
+          <img src="images/twitter.png" alt="" width="50rem" class="twit" />
+        </a>
+      </div>
+      <h4>Made with <i class="fas fa-heart" style="color: red"></i> by OSIS/PK 28 Bandung</h4>
+    </section>
+    <!-- Javascipt  -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

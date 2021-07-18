@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saran | OSIS/PK 28</title>
+    <link rel="stylesheet" href="CSS/stylesaran.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/aafc92313b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="osispk.html">
+          <img src="Images/28_21.png" alt="" />
+        </a>
+        <div class="nav-link" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="osispk.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="kepengurusan.html">Kepengurusan</a></li>
+            <li><a href="">Saran</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+    <section class="saran">
+      <h2>KOTAK SARAN ONLINE</h2>
+      <div class="inputan">
+        <form action="">
+            <div class="row">
+              <div class="col">
+                <i class="fas fa-user"></i>
+                <input type="text" name="" id="" placeholder="Nama" /><br />
+              </div>
+              <div class="col">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" /><br />
+              </div>
+              <div class="col">
+                <i class="fas fa-bookmark"></i>
+                <select name="Kelas" id="kelas">
+                  <option value="1">7A</option>
+                  <option value="2">7B</option>
+                  <option value="3">7C</option>
+                  <option value="4">7D</option>
+                  <option value="5">7E</option>
+                  <option value="6">7F</option>
+                  <option value="7">7G</option>
+                  <option value="8">7H</option>
+                  <option value="9">7I</option>
+                  <option value="1">8A</option>
+                  <option value="2">8B</option>
+                  <option value="3">8C</option>
+                  <option value="4">8D</option>
+                  <option value="5">8E</option>
+                  <option value="6">8F</option>
+                  <option value="7">8G</option>
+                  <option value="8">8H</option>
+                  <option value="9">8I</option>
+                  <option value="1">9A</option>
+                  <option value="2">9B</option>
+                  <option value="3">9C</option>
+                  <option value="4">9D</option>
+                  <option value="5">9E</option>
+                  <option value="6">9F</option>
+                  <option value="7">9G</option>
+                  <option value="8">9H</option>
+                  <option value="9">9I</option>
+                </select><br />
+              </div>
+              <div class="col">
+                <i class="fas fa-pen"></i>
+                <input type="textbox" name="" id="" placeholder="Kritik & Saran" />
+              </div>
+          </form>
+          <button>Kirim!</button>
+          
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <h4>Tentang Kita</h4>
+      <p>Organisasi Siswa Intra Sekolah SMPN 28 Bandung.</p>
+      <div class="icon">
+        <a href="https://www.instagram.com/osispk28bdg/" target="_blank">
+          <img src="images/ig2.png" alt="" width="50rem" class="ig" />
+        </a>
+        <a href="">
+          <img src="images/yt.png" alt="" width="50rem" class="yt" />
+        </a>
+        <a href="">
+          <img src="images/fb2.png" alt="" width="50rem" class="fb" />
+        </a>
+        <a href="">
+          <img src="images/twitter.png" alt="" width="50rem" class="twit" />
+        </a>
+      </div>
+      <h4>Made with <i class="fas fa-heart" style="color: red"></i> by OSIS/PK 28 Bandung</h4>
+    </section>
+    <!-- Javascipt  -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program | OSIS/PK 28 Bandung</title>
+    <link rel="stylesheet" href="CSS/styleprogram.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/aafc92313b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="osispk.html">
+          <img src="Images/28_21.png" alt="" />
+        </a>
+        <div class="nav-link" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="osispk.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="kepengurusan.html">Kepengurusan</a></li>
+            <li><a href="saran.html">Saran</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="textbox">
+        <h1>Program</h1>
+        <a href="#berita" class="btn"><i class="fas fa-arrow-down"></i></a>
+      </div>
+    </section>
+
+    <section class="berita" id="berita">
+      <h1>Program</h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-head">
+            <img src="images/Baksos.jpeg" alt="" width="100%" height="auto" />
+            <a href="">
+              <div class="layer">
+                <i class="far fa-copy"></i>
+              </div>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>Baksos</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <img src="images/lapang.jpg" alt="" width="100%" height="auto" />
+            <a href="">
+              <div class="layer">
+                <i class="far fa-copy"></i>
+              </div>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>CCSD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <img src="images/kelas_luar.jpg" alt="" width="100%" height="auto" />
+            <a href="">
+              <div class="layer">
+                <i class="far fa-copy"></i>
+              </div>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>Kota Bandung PPKM, Sekolah jadinya gimana?</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <img src="Images/kelas3.jpg" alt="" width="100%" height="auto" />
+            <a href="">
+              <div class="layer">
+                <i class="far fa-copy"></i>
+              </div>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>17 Agustus bakal ada E-sport??</p>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+
+      <br /><br />
+    </section>
+    <section class="footer">
+      <h4>Tentang Kita</h4>
+      <p>Organisasi Siswa Intra Sekolah SMPN 28 Bandung.</p>
+      <div class="icon">
+        <a href="https://www.instagram.com/osispk28bdg/" target="_blank">
+          <img src="images/ig2.png" alt="" width="50rem" class="ig" />
+        </a>
+        <a href="">
+          <img src="images/yt.png" alt="" width="50rem" class="yt" />
+        </a>
+        <a href="">
+          <img src="images/fb2.png" alt="" width="50rem" class="fb" />
+        </a>
+        <a href="">
+          <img src="images/twitter.png" alt="" width="50rem" class="twit" />
+        </a>
+      </div>
+      <h4>Made with <i class="fas fa-heart" style="color: red"></i> by OSIS/PK 28 Bandung</h4>
+    </section>
+    <!-- Javascipt  -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
