@@ -88,12 +88,12 @@ nav img {
   position: relative;
   cursor: pointer;
   border-radius: 10px;
+  transition: 0.4s;
 }
 
 .hero-btn:hover {
   border: 1px solid blueviolet;
   background: blueviolet;
-  transition: 0.4s;
 }
 
 nav .fas {
