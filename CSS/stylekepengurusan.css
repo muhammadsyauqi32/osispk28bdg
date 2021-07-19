@@ -105,7 +105,7 @@ nav .fas {
   .nav-link {
     position: absolute;
     background: blueviolet;
-    height: 100vh;
+    height: 50vh;
     width: 200px;
     top: 0;
     right: -200px;
@@ -123,7 +123,6 @@ nav .fas {
   .nav-link ul {
     padding: 30px;
   }
-  
 }
 
 .btn {
