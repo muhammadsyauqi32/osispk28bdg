@@ -123,6 +123,15 @@ nav .fas {
   .nav-link ul {
     padding: 30px;
   }
+  .navigasisekbid ul {
+    max-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .navigasisekbid ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .btn {
@@ -217,199 +226,85 @@ label:hover {
 }
 
 /* Kartu Nama */
+.navigasisekbid {
+  padding: 20px;
+  margin: 40px auto;
+}
+
+.navigasisekbid ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navigasisekbid ul li {
+  list-style: none;
+  border: 2px solid blueviolet;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin: 5px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.navigasisekbid ul li:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.navigasisekbid ul li.active {
+  background: blueviolet;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Kartu Nama */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .card {
-  width: 200px;
+  width: 220px;
+  height: 385px;
   border: 1px solid black;
-  position: relative;
-  height: 345px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  margin: 20px;
+  text-align: center;
+  color: white;
+  margin: 40px;
+}
+
+.card-content p {
+  font-size: 19px;
+}
+
+.card-head {
+  width: 100%;
+  height: 55%;
 }
 
 .card-head img {
   border-radius: 50%;
-}
-
-.card-head {
-  position: relative;
-
-  box-sizing: border-box;
+  height: 100%;
 }
 
 .card-content {
-  box-sizing: border-box;
   background-color: blueviolet;
-
-  padding: 5px 0 5px;
-  color: white;
+  width: 100%;
+  height: 45%;
 }
 
 .card-content .ig {
-  border: 1px solid white;
   border-radius: 50%;
+  border: 1px solid white;
   transition: 0.5s;
 }
-
 .card-content .ig:hover {
-  background-color: orangered;
-}
-
-.pic.sekbid1,
-.pic.sekbid2,
-.pic.sekbid3,
-.pic.sekbid4,
-.pic.sekbid5,
-.pic.sekbid6,
-.pic.sekbid7,
-.pic.sekbid8,
-.pic.tim-inti {
-  padding: 30px;
-}
-
-.pic.sekbid1 .card-container,
-.pic.sekbid2 .card-container,
-.pic.sekbid3 .card-container,
-.pic.sekbid4 .card-container,
-.pic.sekbid5 .card-container,
-.pic.sekbid6 .card-container,
-.pic.sekbid7 .card-container,
-.pic.sekbid8 .card-container,
-.pic.tim-inti .card-container {
-  display: flex;
-
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.pic {
-  position: relative;
-}
-
-#check1:checked ~ .kepengurusan .galeri .tim-inti,
-#check2:checked ~ .kepengurusan .galeri .sekbid1,
-#check3:checked ~ .kepengurusan .galeri .sekbid2,
-#check4:checked ~ .kepengurusan .galeri .sekbid3,
-#check5:checked ~ .kepengurusan .galeri .sekbid4,
-#check6:checked ~ .kepengurusan .galeri .sekbid5,
-#check7:checked ~ .kepengurusan .galeri .sekbid6,
-#check8:checked ~ .kepengurusan .galeri .sekbid7,
-#check9:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 1;
-  transform: scale(1);
-  position: relative;
-  transition: 0.5s;
-}
-
-#check2:checked ~ .kepengurusan .galeri .tim-inti,
-#check2:checked ~ .kepengurusan .galeri .sekbid2,
-#check2:checked ~ .kepengurusan .galeri .sekbid3,
-#check2:checked ~ .kepengurusan .galeri .sekbid4,
-#check2:checked ~ .kepengurusan .galeri .sekbid5,
-#check2:checked ~ .kepengurusan .galeri .sekbid6,
-#check2:checked ~ .kepengurusan .galeri .sekbid7,
-#check2:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check3:checked ~ .kepengurusan .galeri .sekbid1,
-#check3:checked ~ .kepengurusan .galeri .tim-inti,
-#check3:checked ~ .kepengurusan .galeri .sekbid3,
-#check3:checked ~ .kepengurusan .galeri .sekbid4,
-#check3:checked ~ .kepengurusan .galeri .sekbid5,
-#check3:checked ~ .kepengurusan .galeri .sekbid6,
-#check3:checked ~ .kepengurusan .galeri .sekbid7,
-#check3:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check4:checked ~ .kepengurusan .galeri .sekbid1,
-#check4:checked ~ .kepengurusan .galeri .sekbid2,
-#check4:checked ~ .kepengurusan .galeri .tim-inti,
-#check4:checked ~ .kepengurusan .galeri .sekbid4,
-#check4:checked ~ .kepengurusan .galeri .sekbid5,
-#check4:checked ~ .kepengurusan .galeri .sekbid6,
-#check4:checked ~ .kepengurusan .galeri .sekbid7,
-#check4:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check5:checked ~ .kepengurusan .galeri .sekbid1,
-#check5:checked ~ .kepengurusan .galeri .sekbid2,
-#check5:checked ~ .kepengurusan .galeri .sekbid3,
-#check5:checked ~ .kepengurusan .galeri .tim-inti,
-#check5:checked ~ .kepengurusan .galeri .sekbid5,
-#check5:checked ~ .kepengurusan .galeri .sekbid6,
-#check5:checked ~ .kepengurusan .galeri .sekbid7,
-#check5:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check6:checked ~ .kepengurusan .galeri .sekbid1,
-#check6:checked ~ .kepengurusan .galeri .sekbid2,
-#check6:checked ~ .kepengurusan .galeri .sekbid3,
-#check6:checked ~ .kepengurusan .galeri .sekbid4,
-#check6:checked ~ .kepengurusan .galeri .tim-inti,
-#check6:checked ~ .kepengurusan .galeri .sekbid6,
-#check6:checked ~ .kepengurusan .galeri .sekbid7,
-#check6:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check7:checked ~ .kepengurusan .galeri .sekbid1,
-#check7:checked ~ .kepengurusan .galeri .sekbid2,
-#check7:checked ~ .kepengurusan .galeri .sekbid3,
-#check7:checked ~ .kepengurusan .galeri .sekbid4,
-#check7:checked ~ .kepengurusan .galeri .sekbid5,
-#check7:checked ~ .kepengurusan .galeri .tim-inti,
-#check7:checked ~ .kepengurusan .galeri .sekbid7,
-#check7:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check8:checked ~ .kepengurusan .galeri .sekbid1,
-#check8:checked ~ .kepengurusan .galeri .sekbid2,
-#check8:checked ~ .kepengurusan .galeri .sekbid3,
-#check8:checked ~ .kepengurusan .galeri .sekbid4,
-#check8:checked ~ .kepengurusan .galeri .sekbid5,
-#check8:checked ~ .kepengurusan .galeri .sekbid6,
-#check8:checked ~ .kepengurusan .galeri .tim-inti,
-#check8:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check9:checked ~ .kepengurusan .galeri .sekbid1,
-#check9:checked ~ .kepengurusan .galeri .sekbid2,
-#check9:checked ~ .kepengurusan .galeri .sekbid3,
-#check9:checked ~ .kepengurusan .galeri .sekbid4,
-#check9:checked ~ .kepengurusan .galeri .sekbid5,
-#check9:checked ~ .kepengurusan .galeri .sekbid6,
-#check9:checked ~ .kepengurusan .galeri .sekbid7,
-#check9:checked ~ .kepengurusan .galeri .tim-inti {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-#check1:checked ~ .kepengurusan .galeri .sekbid1,
-#check1:checked ~ .kepengurusan .galeri .sekbid2,
-#check1:checked ~ .kepengurusan .galeri .sekbid3,
-#check1:checked ~ .kepengurusan .galeri .sekbid4,
-#check1:checked ~ .kepengurusan .galeri .sekbid5,
-#check1:checked ~ .kepengurusan .galeri .sekbid6,
-#check1:checked ~ .kepengurusan .galeri .sekbid7,
-#check1:checked ~ .kepengurusan .galeri .sekbid8 {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
+  background: #f09433;
 }
 
 /* Tim Inti */
