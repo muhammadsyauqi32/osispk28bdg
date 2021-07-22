@@ -127,7 +127,7 @@ nav .fas {
     max-width: 600px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .navigasisekbid ul {
     flex-wrap: wrap;
     justify-content: center;

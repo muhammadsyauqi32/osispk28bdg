@@ -43,7 +43,8 @@
     </section>
     <section class="navigasisekbid">
       <ul>
-        <li class="list active" data-filter="tim-inti">Inti</li>
+        <li class="list active" data-filter="all">Semua</li>
+        <li class="list" data-filter="tim-inti">Inti</li>
         <li class="list" data-filter="sekbid1">Sekbid1</li>
         <li class="list" data-filter="sekbid2">Sekbid2</li>
         <li class="list" data-filter="sekbid3">Sekbid3</li>
@@ -888,11 +889,9 @@
       $(document).ready(function () {
         $(".list").click(function () {
           const value = $(this).attr("data-filter");
-          if (value == "tim-inti") {
+          if (value == "all") {
             $(".itembox").show("1000");
-            $(".itembox")
-              .not("." + value)
-              .hide("1000");
+            
           } else {
             $(".itembox")
               .not("." + value)
