@@ -34,15 +34,15 @@
     <section class="saran">
       <h2>KOTAK SARAN ONLINE</h2>
       <div class="inputan">
-        <form action="">
+        <form action="" name="form-osis-pk">
             <div class="row">
               <div class="col">
                 <i class="fas fa-user"></i>
-                <input type="text" name="" id="" placeholder="Nama" /><br />
+                <input type="text" name="Nama" id="" placeholder="Nama" /><br />
               </div>
               <div class="col">
                 <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email" /><br />
+                <input type="email" placeholder="Email" name="Email"/><br />
               </div>
               <div class="col">
                 <i class="fas fa-bookmark"></i>
@@ -78,10 +78,10 @@
               </div>
               <div class="col">
                 <i class="fas fa-pen"></i>
-                <input type="textbox" name="" id="" placeholder="Kritik & Saran" />
+                <input type="textbox" name="Pesan" id="" placeholder="Kritik & Saran" />
               </div>
           </form>
-          <button>Kirim!</button>
+          <button type="submit">Kirim!</button>
           
         </div>
       </div>
@@ -115,6 +115,18 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+    </script>
+    <!-- Inputan -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyjBLax76VtnSPd30xArNZa7D0ghqhVVS0kH6Yzq11u-1y2T7_n8MpXBszMMF-y5-8Q/exec'
+      const form = document.forms['form-osis-pk']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
     </script>
   </body>
 </html>
