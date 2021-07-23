@@ -191,11 +191,11 @@ button {
   box-shadow: 0 0 7px black;
   width: 4rem;
   margin: 20px auto;
+  transition: 0.4s;
 }
 
 button:hover {
   box-shadow: 0 0 0 0;
-  transition: 0.2s;
 }
 
 .row {
