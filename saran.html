@@ -83,7 +83,12 @@
                 <input type="textbox" name="Pesan" id="" placeholder="Kritik & Saran" />
               </div>
           </form>
-          <button type="submit" >Kirim!</button>
+          <button type="submit" class="btn-kirim">Kirim!</button>
+          <div class="loader-container d-none">
+            <div class="loader"></div>
+            <p>Loading</p>
+            
+          </div>
           
         </div>
       </div>
@@ -122,11 +127,21 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyjBLax76VtnSPd30xArNZa7D0ghqhVVS0kH6Yzq11u-1y2T7_n8MpXBszMMF-y5-8Q/exec'
       const form = document.forms['form-osis-pk']
+      const btnKirim = document.querySelector('.btn-kirim')
+      const btnLoading = document.querySelector('.loader-container')
     
       form.addEventListener('submit', e => {
         e.preventDefault()
+        // Ketika diklik
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
+          .then(response => {
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response);
+          })
           .catch(error => console.error('Error!', error.message))
       })
     </script>
