@@ -136,6 +136,9 @@ nav .fas {
   .our-leader h1 {
     font-size: 2rem;
   }
+  .gotopbtn {
+    display: none;
+  }
 }
 
 .berita {

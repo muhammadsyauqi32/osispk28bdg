@@ -147,11 +147,12 @@ h1 {
 }
 
 p {
-  color: #777;
-  font-size: 1rem;
+  color: black;
+  font-size: 1.2rem;
   font-weight: 300px;
   line-height: 1.8rem;
   padding: 10px;
+  text-indent: 1rem;
 }
 
 .card {

@@ -132,6 +132,9 @@ nav .fas {
   .itembox h1 {
     font-size: 2rem;
   }
+  .gotopbtn {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
   .navigasisekbid ul {
