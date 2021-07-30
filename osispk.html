@@ -40,6 +40,10 @@
       </div>
     </section>
 
+    <a href="#" class="gotopbtn">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
     <!-- Berita -->
     <section class="berita">
       <h1>Berita Terbaru</h1>
@@ -189,6 +193,18 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+    </script>
+    <!-- TO TOP SCRIPT -->
+    <script>
+      const toTop = document.querySelector(".gotopbtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 200) {
+          toTop.classList.add("active");
+        } else {
+          toTop.classList.remove("active");
+        }
+      });
     </script>
   </body>
 </html>

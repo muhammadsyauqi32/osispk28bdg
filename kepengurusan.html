@@ -920,7 +920,19 @@
         }
       </script>
       <!-- AOS -->
-     
+      <!-- TO TOP SCRIPT -->
+      <script>
+        const toTop = document.querySelector(".gotopbtn");
+
+        window.addEventListener("scroll", () =>{
+          if (window.pageYOffset > 400){
+            toTop.classList.add("active");
+          }else{
+            toTop.classList.remove("active");
+          }
+
+        })
+      </script>
     </body>
   </body>
 </html>
