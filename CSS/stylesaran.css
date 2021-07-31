@@ -278,9 +278,12 @@ input {
   border: none;
   margin-bottom: 10px;
   border-bottom: 1px solid black;
+  outline: none;
 }
 
 select {
+  outline: none;
+  cursor: pointer;
   width: 100%;
   border: none;
   padding: 20px 10px 20px;

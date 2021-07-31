@@ -155,23 +155,32 @@ h1 {
 p {
   color: #777;
   font-size: 1rem;
-  font-weight: 300px;
+  font-weight: 270px;
   line-height: 1.8rem;
   padding: 10px;
+  text-transform: uppercase;
+}
+
+.card .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  font-size: 12px;
 }
 
 .card {
   width: 300px;
   border: 1px solid black;
-  border-radius: 10px;
-  max-height: 300px;
-  min-height: 300px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  max-height: 270px;
+  min-height: 270px;
   margin-bottom: 30px;
 }
 
 .card-head {
   height: 50%;
-  background-color: gray;
+  /* background-color: gray; */
   position: relative;
 }
 
