@@ -192,22 +192,6 @@ p {
   flex-wrap: wrap;
 }
 
-button {
-  padding: 10px;
-  background-color: blueviolet;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  box-shadow: 2px 2px 4px black;
-}
-
-button:hover {
-  box-shadow: 0 0 0 0;
-  transition: 0.2s;
-}
-
 @media (max-width: 650px) {
   .card-container {
     flex-direction: column;

@@ -54,43 +54,6 @@ nav {
   width: 100%;
 }
 
-.textbox {
-  width: 90%;
-  color: white;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.textbox h1 {
-  font-size: 5rem;
-}
-
-.textbox h3 {
-  margin: 10px 0 40px;
-}
-
-.hero-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  border: 1px solid white;
-  padding: 12px 34px;
-  font-size: 1rem;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.hero-btn:hover {
-  border: 1px solid blueviolet;
-  background: blueviolet;
-  transition: 0.4s;
-}
-
 nav .fas {
   display: none;
 }
@@ -134,51 +97,9 @@ nav .fas {
   color: white;
 }
 
-/* Berita */
-
-.berita {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
 h1 {
   font-size: 3rem;
   font-weight: 600;
-}
-
-p {
-  color: #777;
-  font-size: 1rem;
-  font-weight: 300px;
-  line-height: 1.8rem;
-  padding: 10px;
-}
-
-.card {
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 10px;
-  height: 100%;
-  margin-bottom: 30px;
-}
-
-.card-head {
-  height: 100%;
-  background-color: gray;
-  position: relative;
-}
-
-.card-content {
-  height: 100%;
-  padding: 20px 0 20px;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 button {

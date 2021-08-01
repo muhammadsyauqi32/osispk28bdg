@@ -192,48 +192,6 @@ input {
   }
 }
 
-.nav {
-  background-color: blueviolet;
-  width: 90%;
-  margin: 0 auto 20px auto;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px blueviolet;
-  position: relative;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-label {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 5px;
-
-  /* margin: 0 20px; */
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-  transition: color 0.5s;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-label:hover {
-  color: black;
-}
-
-.galeri {
-  width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat (4, 1fr);
-  padding-bottom: 100px;
-}
-
 /* Kartu Nama */
 .navigasisekbid {
   padding: 20px;
@@ -323,6 +281,10 @@ h1 {
 /* Tim Inti */
 
 /* Footer */
+.footer p {
+  color: #777;
+}
+
 .footer .ig,
 .footer .fb,
 .footer .twit {
